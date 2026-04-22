@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOVA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__content">
+        <div class="logo">NOVA</div>
+        <nav class="nav">
+          <a href="index.html" class="nav__link active" data-page="shop"
+            >Магазин</a
+          >
+          <a href="#" class="nav__link" data-page="cart"
+            >Корзина (<span id="cart-count">0</span>)</a
+          >
+          <a href="#" class="nav__link" data-page="profile">Профиль</a>
+        </nav>
+        <button class="btn btn--login" id="auth-btn">Войти</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="shop-page" class="page">
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-card__img">
+              <img
+                src="./fe890d70a3a23e9367a5d6ac0bd1b00b.jpg"
+                alt="Наушники"
+              />
+            </div>
+            <h3 class="product-card__title">Беспроводные наушники Pro</h3>
+            <div class="product-card__rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <div class="product-card__footer">
+              <span class="price">12 990 ₸</span>
+              <button class="add-to-cart">+</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__img">
+              <img src="./67370_1.jpg" alt="Часы" />
+            </div>
+            <h3 class="product-card__title">Смарт-часы Active</h3>
+            <div class="product-card__rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <div class="product-card__footer">
+              <span class="price">25 000 ₸</span>
+              <button class="add-to-cart">+</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__img">
+              <img src="./Без названия.jpeg" alt="Кроссовки" />
+            </div>
+            <h3 class="product-card__title">Кроссовки Urban</h3>
+            <div class="product-card__rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <div class="product-card__footer">
+              <span class="price">32 500 ₸</span>
+              <button class="add-to-cart">+</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__img">
+              <img src="./shopping.webp" alt="Рюкзак" />
+            </div>
+            <h3 class="product-card__title">Рюкзак Explorer</h3>
+            <div class="product-card__rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <div class="product-card__footer">
+              <span class="price">18 000 ₸</span>
+              <button class="add-to-cart">+</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cart-page" class="page hidden">
+        <h2>Ваша корзина</h2>
+        <div id="cart-items">
+          <p>Корзина пока пуста...</p>
+        </div>
+      </section>
+
+      <section id="profile-page" class="page hidden">
+        <h2>Личный кабинет</h2>
+        <div class="profile-info">
+          <p>Вы не авторизованы.</p>
+        </div>
+      </section>
+
+      <section id="auth-page" class="page hidden">
+        <div class="auth-container">
+          <div class="auth-form" id="register-form">
+            <h3>Регистрация</h3>
+            <input type="text" placeholder="Имя" />
+            <input type="email" placeholder="Почта" />
+            <input type="password" placeholder="Пароль (мин. 8 символов)" />
+            <button class="btn btn--primary">Зарегистрироваться</button>
+            <p>Уже есть аккаунт? <a href="#" id="show-login">Войти</a></p>
+          </div>
+          <div class="auth-form hidden" id="login-form">
+            <h3>Вход</h3>
+            <input type="email" placeholder="Почта" />
+            <input type="password" placeholder="Пароль" />
+            <button class="btn btn--primary">Войти</button>
+            <p>Нет аккаунта? <a href="#" id="show-reg">Создать</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
